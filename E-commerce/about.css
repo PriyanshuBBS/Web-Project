@@ -1,0 +1,52 @@
+#page-header {
+    background-image: url(img/about/banner.png);
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    width: 50%;
+    height: auto;
+}
+
+#about div {
+    padding-left: 40px;
+}
+
+#app-about {
+    text-align: center;
+}
+
+#app-about video {
+    margin: 30px auto;
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width:477px) {
+    #about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #about img {
+        margin: 20px 0;
+        height: 30vh;
+    }
+
+    #about img {
+        width: 100%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    #app-about video {
+        margin: 8px auto;
+    }
+}

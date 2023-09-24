@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 42);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 7, 72);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            color: rgb(164, 74, 164);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(164, 74, 164);
+            height: 1.2px;
+            /* margin top-bottom and left-right */
+            margin: 40px 84px;
+        }
+
+        /* only the first div will get the property */
+        .firstSection>div {
+            width: 33%;
+            /* background-color: red; */
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin: 58px 0;
+        }
+
+        .rightSection img {
+            width: 122%;
+            margin: 29px 0;
+        }
+
+        .purple {
+            color: rgb(164, 74, 164);
+        }
+
+        #element {
+            margin-top: 10px;
+            color: rgb(164, 74, 164);
+        }
+
+        .secondSection {
+            max-width: 83vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1.2rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 130px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 106px;
+            width: 1px;
+            background: gray;
+            margin: 0 118px;
+        }
+
+        .image-top {
+            width: 47px;
+            position: relative;
+            top: -99px;
+            left: -21px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 35px;
+            left: -20px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 49px;
+            left: -21px;
+            width: 71px;
+            font-size: 9px;
+            width: 132px;
+            color: rgb(175, 175, 175);
+        }
+
+        footer {
+
+            background-color: #00001c;
+        }
+
+        .footer {
+            display: flex;
+            padding: 27px 90px;
+            justify-content: space-evenly;
+        }
+
+        .footer-first {
+            font-size: 1.5rem
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 200px;
+        }
+
+        footer .footer-rights {
+            color: gray;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        .leftSection .btn {
+            padding: 7px 7px;
+            border-radius: 7px;
+            background-color: #56195b;
+            color: white;
+            border: white;
+            cursor: pointer;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyanshu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Priyanshu</span>
+                <div>and I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="button"></div>
+                <button class="btn">Resume</button>
+                <button class="btn">Github</button>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Past Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">HTML Developer (2023-2024)</div>
+                    <div class="vertical-desc">The HyperText Markup Language or HTML is the standard markup language for
+                        documents designed to be displayed in a web browser.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">NodeJs Developer (2023-2024)</div>
+                    <div class="vertical-desc">Node.js is a cross-platform, open-source server environment that can run
+                        on Windows, Linux, Unix, macOS, and more.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">React Developer (2023-2024)</div>
+                    <div class="vertical-desc">React is a free and open-source front-end JavaScript library for building
+                        user interfaces based on components.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">HTML Developer (2023-2024)</div>
+                    <div class="vertical-desc">The HyperText Markup Language or HTML is the standard markup language for
+                        documents designed to be displayed in a web browser.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-text">HTML Developer (2023-2024)</div>
+                    <div class="vertical-desc">The HyperText Markup Language or HTML is the standard markup language for
+                        documents designed to be displayed in a web browser.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Priyanshu's Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">Copyright &copy; priyanshudhal.com | All rights reserved</div>
+    </footer>
+
+    <!-- Typed Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphics Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
